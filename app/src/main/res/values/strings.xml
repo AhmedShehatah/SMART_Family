@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Smart App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">welcome,</string>
+    <string name="tv2_screen2">This is the career ranking of the "Smart family"</string>
+    <string name="tv3_screen2">president</string>
+    <string name="tv4_screen2">vice president</string>
+    <string name="tv5_screen2">Head of sections</string>
+    <string name="tv6_screen2">vice of sections</string>
+    <string name="tv7_screen2">Members of sections</string>
+</resources>
