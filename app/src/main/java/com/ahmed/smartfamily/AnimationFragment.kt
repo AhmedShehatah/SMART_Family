@@ -126,7 +126,7 @@ class AnimationFragment : Fragment() {
         //Going to Second Fragment
         Handler().postDelayed({
             val transaction = (activity as MainActivity).supportFragmentManager.beginTransaction()
-            transaction.replace(R.id.fragment_container, SecondFragment())
+            transaction.replace(R.id.fragment_container, RankingFragment())
             transaction.commit()
         }, 5200)
 

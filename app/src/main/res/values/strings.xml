@@ -9,4 +9,8 @@
     <string name="tv5_screen2">Head of sections</string>
     <string name="tv6_screen2">vice of sections</string>
     <string name="tv7_screen2">Members of sections</string>
+    <string name="there_are_the_presidents">There are the presidents:-</string>
+    <string name="ahmed_abubakr">Ahmed Abubakr</string>
+    <string name="eslam_ali">Eslam Ali</string>
+    <string name="image">image</string>
 </resources>

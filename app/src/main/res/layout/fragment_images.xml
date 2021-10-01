@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen2_1"
+    tools:context=".ImagesFragment">
+
+    <TextView
+        android:id="@+id/tv_images1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/there_are_the_presidents"
+        android:textColor="#f2494949"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="153dp"
+        android:background="@drawable/text_back"
+        android:gravity="center"
+        android:paddingStart="25dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="25dp"
+        android:paddingBottom="5dp"
+        android:textColor="#4fa800"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:text="Current" />
+
+    <ImageView
+        android:id="@+id/iv_president"
+        android:layout_width="142dp"
+        android:layout_height="142dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="215dp"
+        android:layout_marginEnd="38dp"
+        android:contentDescription="@string/image"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="370dp"
+        android:layout_marginEnd="9dp"
+        android:text="@string/ahmed_abubakr"
+        android:textColor="#3a3a3a"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="403dp"
+        android:layout_marginEnd="70dp"
+        android:textColor="#006578"
+        android:textStyle="bold"
+        tools:text="president" />
+
+
+    <ImageView
+        android:id="@+id/iv_founder"
+        android:layout_width="142dp"
+        android:layout_height="142dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="215dp"
+        android:contentDescription="@string/image"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="370dp"
+        android:letterSpacing="0.05"
+        android:text="@string/eslam_ali"
+        android:textColor="#3a3a3a"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="403dp"
+        android:textColor="#006578"
+        android:textStyle="bold"
+        tools:text="Founder" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="470dp"
+        android:background="@drawable/text_back"
+        android:paddingStart="25dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="25dp"
+        android:paddingBottom="6dp"
+        android:textColor="#b00000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:text="Previous" />
+
+    <ImageView
+        android:id="@+id/iv_prev_president"
+        android:layout_width="142dp"
+        android:layout_height="142dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="530dp"
+        android:layout_marginEnd="33dp"
+        android:contentDescription="@string/image"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="690dp"
+        android:textColor="#3a3a3a"
+        android:textSize="23sp"
+        android:textStyle="normal"
+        tools:text="Beshoy Kadous" />
+
+    <ImageView
+        android:id="@+id/iv_prev_founder"
+        android:layout_width="142dp"
+        android:layout_height="142dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="530dp"
+        android:contentDescription="@string/image"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="690dp"
+        android:textColor="#3a3a3a"
+        android:textSize="23sp"
+        tools:text="Eslam Ali" />
+
+    </RelativeLayout>
