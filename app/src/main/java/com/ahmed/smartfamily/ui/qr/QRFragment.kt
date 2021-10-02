@@ -3,11 +3,12 @@ package com.ahmed.smartfamily.ui.qr
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.core.app.ActivityCompat
+import androidx.core.os.bundleOf
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.ahmed.smartfamily.BaseFragment
+import com.ahmed.smartfamily.R
 import com.ahmed.smartfamily.databinding.FragmentQrBinding
 import com.budiyev.android.codescanner.*
 
@@ -44,7 +45,10 @@ class QRFragment : BaseFragment<FragmentQrBinding>() {
 
         // Callbacks
         codeScanner.decodeCallback = DecodeCallback {
-            Toast.makeText(requireContext(), it.text.toString(), Toast.LENGTH_SHORT).show()
+            requireActivity().runOnUiThread {
+                val bundle = bundleOf("token" to it.text.toString())
+                navController.navigate(R.id.action_QRFragment_to_memberFragment, bundle)
+            }
 
         }
         codeScanner.errorCallback = ErrorCallback { // or ErrorCallback.SUPPRESS

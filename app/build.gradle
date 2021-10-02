@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'androidx.navigation.safeargs.kotlin'
 }
 
 android {
@@ -31,7 +32,7 @@ android {
         jvmTarget = '1.8'
     }
     buildFeatures {
-        viewBinding  true
+        viewBinding true
     }
 }
 
@@ -53,4 +54,13 @@ dependencies {
 
     //QR Scanner
     implementation 'com.budiyev.android:code-scanner:2.1.0'
+
+    // retrofit && gson
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation("com.squareup.okhttp3:logging-interceptor:4.9.2")
+    // Kotlin Android Coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.0"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.0"
+
 }

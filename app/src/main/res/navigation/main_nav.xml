@@ -34,5 +34,23 @@
         android:id="@+id/QRFragment"
         android:name="com.ahmed.smartfamily.ui.qr.QRFragment"
         android:label="fragment_qr"
-        tools:layout="@layout/fragment_qr" />
+        tools:layout="@layout/fragment_qr" >
+        <action
+            android:id="@+id/action_QRFragment_to_memberFragment"
+            app:destination="@id/memberFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.ahmed.smartfamily.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/memberFragment"
+        android:name="com.ahmed.smartfamily.ui.member.MemberFragment"
+        android:label="fragment_member"
+        tools:layout="@layout/fragment_member" >
+        <argument
+            android:name="token"
+            app:argType="string" />
+    </fragment>
 </navigation>
