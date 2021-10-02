@@ -30,4 +30,13 @@
         <item name="android:listPreferredItemPaddingRight">8dp</item>
         <item name="listPreferredItemPaddingRight">8dp</item>
     </style>
+
+    <style name="Theme.SMARTFamily.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.SMARTFamily.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.SMARTFamily.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

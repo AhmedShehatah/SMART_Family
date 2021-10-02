@@ -11,9 +11,20 @@
     <string name="tv7_screen2">Members of sections</string>
     <string name="there_are_the_presidents">There are the presidents:-</string>
     <string name="ahmed_abubakr">Ahmed Abubakr</string>
-    <string name="eslam_ali">Eslam Ali</string>
     <string name="image">image</string>
+    <string name="eslam_ali">Eslam Ali</string>
     <string name="activate_your_mind">Activate Your Mind</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
     <string name="current">Current</string>
     <string name="founder">Founder</string>
     <string name="previous">Previous</string>

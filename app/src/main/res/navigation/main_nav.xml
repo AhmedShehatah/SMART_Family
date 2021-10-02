@@ -30,4 +30,9 @@
             android:id="@+id/action_rankingFragment_to_imagesFragment"
             app:destination="@id/imagesFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/QRFragment"
+        android:name="com.ahmed.smartfamily.ui.qr.QRFragment"
+        android:label="fragment_qr"
+        tools:layout="@layout/fragment_qr" />
 </navigation>

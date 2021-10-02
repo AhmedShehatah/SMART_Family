@@ -9,20 +9,12 @@
         <entry key="..\:/Users/user/Downloads/SMART_Family-master/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.16574074074074074" />
         <entry key="..\:/Users/user/Downloads/SMART_Family-master/app/src/main/res/drawable/ic_qr.xml" value="0.22467532467532467" />
         <entry key="..\:/Users/user/Downloads/SMART_Family-master/app/src/main/res/drawable/image_shape.xml" value="0.16574074074074074" />
-        <entry key="..\:/Users/user/Downloads/SMART_Family-master/app/src/main/res/drawable/info_view.xml" value="0.22467532467532467" />
-        <entry key="..\:/Users/user/Downloads/SMART_Family-master/app/src/main/res/drawable/layer_3.xml" value="0.22467532467532467" />
-        <entry key="..\:/Users/user/Downloads/SMART_Family-master/app/src/main/res/drawable/path_57.xml" value="0.22467532467532467" />
-        <entry key="..\:/Users/user/Downloads/SMART_Family-master/app/src/main/res/drawable/rectangle_8.xml" value="0.22467532467532467" />
         <entry key="..\:/Users/user/Downloads/SMART_Family-master/app/src/main/res/drawable/screen2_1.xml" value="0.17037037037037037" />
         <entry key="..\:/Users/user/Downloads/SMART_Family-master/app/src/main/res/drawable/text_back.xml" value="0.22467532467532467" />
-        <entry key="..\:/Users/user/Downloads/SMART_Family-master/app/src/main/res/drawable/text_info_background.xml" value="0.22467532467532467" />
         <entry key="..\:/Users/user/Downloads/SMART_Family-master/app/src/main/res/drawable/text_shape.xml" value="0.16574074074074074" />
-        <entry key="..\:/Users/user/Downloads/SMART_Family-master/app/src/main/res/drawable/view_background.xml" value="0.22467532467532467" />
         <entry key="..\:/Users/user/Downloads/SMART_Family-master/app/src/main/res/layout/activity_main.xml" value="0.152" />
         <entry key="..\:/Users/user/Downloads/SMART_Family-master/app/src/main/res/layout/fragment_animation.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/user/Downloads/SMART_Family-master/app/src/main/res/layout/fragment_images.xml" value="0.2" />
-        <entry key="..\:/Users/user/Downloads/SMART_Family-master/app/src/main/res/layout/fragment_info.xml" value="0.264" />
-        <entry key="..\:/Users/user/Downloads/SMART_Family-master/app/src/main/res/layout/fragment_member.xml" value="0.2" />
         <entry key="..\:/Users/user/Downloads/SMART_Family-master/app/src/main/res/layout/fragment_ranking.xml" value="0.2" />
         <entry key="..\:/Users/user/Downloads/SMART_Family-master/app/src/main/res/layout/fragment_second.xml" value="0.176" />
         <entry key="..\:/Users/user/Downloads/SMART_Family-master/app/src/main/res/layout/header_layout.xml" value="0.16052631578947368" />
@@ -31,15 +23,28 @@
         <entry key="..\:/Users/user/Downloads/SMART_Family-master/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.16574074074074074" />
         <entry key="app/src/main/res/drawable/ic_home.xml" value="0.2140625" />
         <entry key="app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.2140625" />
+        <entry key="app/src/main/res/drawable/ic_menu_camera.xml" value="0.3435185185185185" />
         <entry key="app/src/main/res/drawable/ic_qr.xml" value="0.2140625" />
         <entry key="app/src/main/res/drawable/ic_screen1_1.xml" value="0.2140625" />
         <entry key="app/src/main/res/drawable/path_3.xml" value="0.2140625" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.24547101449275363" />
+        <entry key="app/src/main/res/drawable/side_nav_bar.xml" value="0.3435185185185185" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/app_bar_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/content_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_animation.xml" value="0.24547101449275363" />
         <entry key="app/src/main/res/layout/fragment_base.xml" value="0.24547101449275363" />
+        <entry key="app/src/main/res/layout/fragment_gallery.xml" value="0.24547101449275363" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.24547101449275363" />
         <entry key="app/src/main/res/layout/fragment_images.xml" value="0.24547101449275363" />
+        <entry key="app/src/main/res/layout/fragment_info.xml" value="0.18229166666666666" />
+        <entry key="app/src/main/res/layout/fragment_member.xml" value="0.24547101449275363" />
+        <entry key="app/src/main/res/layout/fragment_qr.xml" value="0.24547101449275363" />
         <entry key="app/src/main/res/layout/fragment_ranking.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/fragment_slideshow.xml" value="0.24547101449275363" />
         <entry key="app/src/main/res/layout/header_layout.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/layout/nav_header_main.xml" value="0.24547101449275363" />
+        <entry key="app/src/main/res/menu/main.xml" value="0.35572916666666665" />
+        <entry key="app/src/main/res/menu/navigation_view.xml" value="0.35572916666666665" />
       </map>
     </option>
   </component>

@@ -19,6 +19,7 @@ class AnimationFragment : BaseFragment<FragmentAnimationBinding>() {
 
     override fun setupOnViewCreated(view: View) {
         navController = Navigation.findNavController(view)
+
 //        animation()
         navController.navigate(R.id.action_animationFragment_to_rankingFragment)
     }
