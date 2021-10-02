@@ -1,27 +1,29 @@
-package com.ahmed.smartfamily
+package com.ahmed.smartfamily.ui.splash
 
-import android.os.Bundle
 import android.os.Handler
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AnimationUtils
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
+import com.ahmed.smartfamily.BaseFragment
+import com.ahmed.smartfamily.R
 import com.ahmed.smartfamily.databinding.FragmentAnimationBinding
 
-class AnimationFragment : Fragment() {
+class AnimationFragment : BaseFragment<FragmentAnimationBinding>() {
 
-    private var _binding: FragmentAnimationBinding? = null
-    private val binding get() = _binding!!
+    private lateinit var navController: NavController
+    override val bindingInflater: (LayoutInflater, ViewGroup?, Boolean) -> FragmentAnimationBinding
+        get() = FragmentAnimationBinding::inflate
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        _binding = FragmentAnimationBinding.inflate(inflater, container, false)
-        val view = binding.root
+    override fun setupOnViewCreated(view: View) {
+        navController = Navigation.findNavController(view)
+//        animation()
+        navController.navigate(R.id.action_animationFragment_to_rankingFragment)
+    }
 
+    private fun animation() {
         //ImageView Animation
         Handler().postDelayed({
             val animation = AnimationUtils.loadAnimation(context, R.anim.blink)
@@ -123,16 +125,9 @@ class AnimationFragment : Fragment() {
             }
         }, 4800)
 
-        //Going to Second Fragment
         Handler().postDelayed({
-            val transaction = (activity as MainActivity).supportFragmentManager.beginTransaction()
-            transaction.replace(R.id.fragment_container, RankingFragment())
-            transaction.commit()
-        }, 5200)
+            navController.navigate(R.id.action_animationFragment_to_rankingFragment)
+        }, 5000)
 
-
-
-        return view
     }
-
 }

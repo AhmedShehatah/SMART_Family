@@ -1,44 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/screen2_1"
-    tools:context=".ImagesFragment">
+    tools:context=".ui.president.ImagesFragment">
+
 
     <TextView
         android:id="@+id/tv_images1"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="38dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
         android:text="@string/there_are_the_presidents"
         android:textColor="#f2494949"
         android:textSize="28sp"
-        android:textStyle="bold" />
-
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="153dp"
-        android:background="@drawable/text_back"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/text_shape"
         android:gravity="center"
         android:paddingStart="25dp"
         android:paddingTop="5dp"
         android:paddingEnd="25dp"
         android:paddingBottom="5dp"
+        android:text="Current"
         android:textColor="#4fa800"
         android:textSize="25sp"
         android:textStyle="bold"
-        tools:text="Current" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_images1" />
+
 
     <ImageView
         android:id="@+id/iv_president"
@@ -46,10 +53,13 @@
         android:layout_height="142dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="215dp"
-        android:layout_marginEnd="38dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/cardview_dark_background"
         android:contentDescription="@string/image"
-        tools:src="@tools:sample/avatars" />
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <TextView
         android:id="@+id/textView10"
@@ -57,11 +67,13 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="370dp"
-        android:layout_marginEnd="9dp"
+        android:layout_marginTop="8dp"
         android:text="@string/ahmed_abubakr"
         android:textColor="#3a3a3a"
-        android:textSize="25sp" />
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/iv_prev_founder"
+        app:layout_constraintStart_toStartOf="@+id/iv_prev_founder"
+        app:layout_constraintTop_toBottomOf="@+id/iv_prev_founder" />
 
     <TextView
         android:id="@+id/textView12"
@@ -69,12 +81,13 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="403dp"
-        android:layout_marginEnd="70dp"
+        android:layout_marginTop="8dp"
         android:textColor="#006578"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
         tools:text="president" />
-
 
     <ImageView
         android:id="@+id/iv_founder"
@@ -82,10 +95,13 @@
         android:layout_height="142dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="33dp"
-        android:layout_marginTop="215dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/cardview_dark_background"
         android:contentDescription="@string/image"
-        tools:src="@tools:sample/avatars" />
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <TextView
         android:id="@+id/textView11"
@@ -93,22 +109,29 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="370dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
         android:letterSpacing="0.05"
         android:text="@string/eslam_ali"
         android:textColor="#3a3a3a"
-        android:textSize="25sp" />
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/iv_president"
+        app:layout_constraintStart_toStartOf="@+id/iv_president"
+        app:layout_constraintTop_toBottomOf="@+id/iv_president"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="71dp"
-        android:layout_marginTop="403dp"
+        android:layout_marginTop="8dp"
         android:textColor="#006578"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView15"
+        app:layout_constraintStart_toStartOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
         tools:text="Founder" />
 
     <TextView
@@ -117,16 +140,19 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="470dp"
-        android:background="@drawable/text_back"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/text_shape"
         android:paddingStart="25dp"
         android:paddingTop="4dp"
         android:paddingEnd="25dp"
         android:paddingBottom="6dp"
+        android:text="Previous"
         android:textColor="#b00000"
         android:textSize="25sp"
         android:textStyle="bold"
-        tools:text="Previous" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     <ImageView
         android:id="@+id/iv_prev_president"
@@ -134,22 +160,31 @@
         android:layout_height="142dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="530dp"
-        android:layout_marginEnd="33dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/cardview_dark_background"
         android:contentDescription="@string/image"
-        tools:src="@tools:sample/avatars" />
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="220dp"
-        android:layout_marginTop="690dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
+        android:text="Beshoy Kadous"
         android:textColor="#3a3a3a"
         android:textSize="23sp"
         android:textStyle="normal"
-        tools:text="Beshoy Kadous" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/iv_founder"
+        app:layout_constraintStart_toStartOf="@+id/iv_founder"
+        app:layout_constraintTop_toBottomOf="@+id/iv_founder"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/iv_prev_founder"
@@ -157,10 +192,13 @@
         android:layout_height="142dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="33dp"
-        android:layout_marginTop="530dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/cardview_dark_background"
         android:contentDescription="@string/image"
-        tools:src="@tools:sample/avatars" />
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
     <TextView
         android:id="@+id/textView15"
@@ -168,10 +206,13 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="42dp"
-        android:layout_marginTop="690dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="8dp"
+        android:text="@string/eslam_ali"
         android:textColor="#3a3a3a"
         android:textSize="23sp"
-        tools:text="Eslam Ali" />
+        app:layout_constraintEnd_toEndOf="@+id/iv_prev_president"
+        app:layout_constraintStart_toStartOf="@+id/iv_prev_president"
+        app:layout_constraintTop_toBottomOf="@+id/iv_prev_president" />
 
-    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

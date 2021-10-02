@@ -21,6 +21,17 @@
         <entry key="..\:/Users/user/Downloads/SMART_Family-master/app/src/main/res/menu-v26/navigation_view.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/user/Downloads/SMART_Family-master/app/src/main/res/menu/navigation_view.xml" value="0.16052631578947368" />
         <entry key="..\:/Users/user/Downloads/SMART_Family-master/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.16574074074074074" />
+        <entry key="app/src/main/res/drawable/ic_home.xml" value="0.2140625" />
+        <entry key="app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.2140625" />
+        <entry key="app/src/main/res/drawable/ic_qr.xml" value="0.2140625" />
+        <entry key="app/src/main/res/drawable/ic_screen1_1.xml" value="0.2140625" />
+        <entry key="app/src/main/res/drawable/path_3.xml" value="0.2140625" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.24547101449275363" />
+        <entry key="app/src/main/res/layout/fragment_animation.xml" value="0.24547101449275363" />
+        <entry key="app/src/main/res/layout/fragment_base.xml" value="0.24547101449275363" />
+        <entry key="app/src/main/res/layout/fragment_images.xml" value="0.24547101449275363" />
+        <entry key="app/src/main/res/layout/fragment_ranking.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/header_layout.xml" value="0.19791666666666666" />
       </map>
     </option>
   </component>
