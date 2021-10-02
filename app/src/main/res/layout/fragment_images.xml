@@ -38,7 +38,7 @@
         android:textColor="#4fa800"
         android:textSize="25sp"
         android:textStyle="bold"
-        tools:text="Current" />
+        android:text="@string/current" />
 
     <ImageView
         android:id="@+id/iv_president"
@@ -109,7 +109,7 @@
         android:layout_marginTop="403dp"
         android:textColor="#006578"
         android:textStyle="bold"
-        tools:text="Founder" />
+        android:text="@string/founder" />
 
     <TextView
         android:id="@+id/textView13"
@@ -126,7 +126,7 @@
         android:textColor="#b00000"
         android:textSize="25sp"
         android:textStyle="bold"
-        tools:text="Previous" />
+        android:text="@string/previous" />
 
     <ImageView
         android:id="@+id/iv_prev_president"
@@ -149,7 +149,7 @@
         android:textColor="#3a3a3a"
         android:textSize="23sp"
         android:textStyle="normal"
-        tools:text="Beshoy Kadous" />
+        android:text="@string/beshoy_kadous" />
 
     <ImageView
         android:id="@+id/iv_prev_founder"
@@ -172,6 +172,6 @@
         android:layout_marginTop="690dp"
         android:textColor="#3a3a3a"
         android:textSize="23sp"
-        tools:text="Eslam Ali" />
+        android:text="@string/eslam_ali" />
 
     </RelativeLayout>
