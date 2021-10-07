@@ -8,12 +8,12 @@ import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.ahmed.smartfamily.BaseFragment
 import com.ahmed.smartfamily.MainActivity
-import com.ahmed.smartfamily.databinding.FragmentImagesBinding
+import com.ahmed.smartfamily.databinding.FragmentPresidentBinding
 
 
-class ImagesFragment : BaseFragment<FragmentImagesBinding>() {
-    override val bindingInflater: (LayoutInflater, ViewGroup?, Boolean) -> FragmentImagesBinding
-        get() = FragmentImagesBinding::inflate
+class PresidentFragment : BaseFragment<FragmentPresidentBinding>() {
+    override val bindingInflater: (LayoutInflater, ViewGroup?, Boolean) -> FragmentPresidentBinding
+        get() = FragmentPresidentBinding::inflate
     private lateinit var navController: NavController
     override fun setupOnViewCreated(view: View) {
         navController = Navigation.findNavController(view)

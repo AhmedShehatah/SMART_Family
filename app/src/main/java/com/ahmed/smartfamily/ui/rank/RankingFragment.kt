@@ -20,7 +20,7 @@ class RankingFragment : BaseFragment<FragmentRankingBinding>() {
     override fun setupOnViewCreated(view: View) {
         navController = Navigation.findNavController(view)
 
-        binding.tvPresident.setOnClickListener {
+        binding.rankingTvPresident.setOnClickListener {
             navController.navigate(R.id.action_rankingFragment_to_imagesFragment)
         }
     }

@@ -20,15 +20,14 @@ class AnimationFragment : BaseFragment<FragmentAnimationBinding>() {
     override fun setupOnViewCreated(view: View) {
         navController = Navigation.findNavController(view)
 
- //       animation()
-        navController.navigate(R.id.action_animationFragment_to_rankingFragment)
+        animation()
     }
 
     private fun animation() {
         //ImageView Animation
         Handler().postDelayed({
             val animation = AnimationUtils.loadAnimation(context, R.anim.blink)
-            binding.ivIcon.startAnimation(animation)
+            binding.animationIvSmart.startAnimation(animation)
         }, 2000)
 
 
@@ -36,93 +35,93 @@ class AnimationFragment : BaseFragment<FragmentAnimationBinding>() {
         //Typing Animation
         Handler().postDelayed({
             run {
-                binding.tvIcon.visibility = View.VISIBLE
-                binding.tvIcon.text = "A"
+                binding.animationTv.visibility = View.VISIBLE
+                binding.animationTv.text = "A"
             }
         }, 1400)
         Handler().postDelayed({
             run {
-                binding.tvIcon.append("c")
+                binding.animationTv.append("c")
             }
         }, 1600)
         Handler().postDelayed({
             run {
-                binding.tvIcon.append("t")
+                binding.animationTv.append("t")
             }
         }, 1800)
         Handler().postDelayed({
             run {
-                binding.tvIcon.append("i")
+                binding.animationTv.append("i")
             }
         }, 2000)
         Handler().postDelayed({
             run {
-                binding.tvIcon.append("v")
+                binding.animationTv.append("v")
             }
         }, 2200)
         Handler().postDelayed({
             run {
-                binding.tvIcon.append("a")
+                binding.animationTv.append("a")
             }
         }, 2400)
         Handler().postDelayed({
             run {
-                binding.tvIcon.append("t")
+                binding.animationTv.append("t")
             }
         }, 2600)
         Handler().postDelayed({
             run {
-                binding.tvIcon.append("e")
+                binding.animationTv.append("e")
             }
         }, 2800)
         Handler().postDelayed({
             run {
-                binding.tvIcon.append(" ")
+                binding.animationTv.append(" ")
             }
         }, 3000)
         Handler().postDelayed({
             run {
-                binding.tvIcon.append("Y")
+                binding.animationTv.append("Y")
             }
         }, 3200)
         Handler().postDelayed({
             run {
-                binding.tvIcon.append("o")
+                binding.animationTv.append("o")
             }
         }, 3400)
         Handler().postDelayed({
             run {
-                binding.tvIcon.append("u")
+                binding.animationTv.append("u")
             }
         }, 3600)
         Handler().postDelayed({
             run {
-                binding.tvIcon.append("r")
+                binding.animationTv.append("r")
             }
         }, 3800)
         Handler().postDelayed({
             run {
-                binding.tvIcon.append(" ")
+                binding.animationTv.append(" ")
             }
         }, 4000)
         Handler().postDelayed({
             run {
-                binding.tvIcon.append("M")
+                binding.animationTv.append("M")
             }
         }, 4200)
         Handler().postDelayed({
             run {
-                binding.tvIcon.append("i")
+                binding.animationTv.append("i")
             }
         }, 4400)
         Handler().postDelayed({
             run {
-                binding.tvIcon.append("n")
+                binding.animationTv.append("n")
             }
         }, 4600)
         Handler().postDelayed({
             run {
-                binding.tvIcon.append("d")
+                binding.animationTv.append("d")
             }
         }, 4800)
 

@@ -8,201 +8,212 @@
     tools:context=".ui.member.MemberFragment">
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/member_iv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="315dp"
-        android:layout_marginBottom="737dp"
+        android:layout_marginEnd="@dimen/member_fragment_iv1_marginEnd"
+        android:layout_marginBottom="@dimen/member_fragment_iv1_marginBottom"
         android:src="@drawable/layer_3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="110dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="178dp"
-        android:layout_marginEnd="27dp"
-        android:layout_marginBottom="778dp"
-        android:src="@drawable/ellipse_2"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_person"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView7" />
+        android:contentDescription="@string/image" />
 
     <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="128dp"
-        android:layout_height="128dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="78dp"
-        android:background="@drawable/ic_launcher_background"
+        android:id="@+id/member_iv2"
+        android:layout_width="@dimen/member_fragment_iv2_width"
+        android:layout_height="@dimen/member_fragment_iv2_height"
+        android:layout_marginStart="@dimen/member_fragment_iv2_marginStart"
+        android:layout_marginEnd="@dimen/member_fragment_iv2_marginEnd"
+        android:layout_marginBottom="@dimen/member_fragment_iv2_marginBottom"
+        android:src="@drawable/ellipse_2"
+        app:layout_constraintBottom_toTopOf="@+id/iv_person"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/member_iv1"
+        android:contentDescription="@string/image" />
 
+    <ImageView
+        android:id="@+id/iv_person"
+        android:layout_width="@dimen/member_fragment_person_width"
+        android:layout_height="@dimen/member_fragment_person_height"
+        android:layout_marginStart="@dimen/member_fragment_person_marginStart"
+        android:layout_marginTop="@dimen/member_fragment_person_marginTop"
+        android:background="@drawable/ic_launcher_background"
+        android:contentDescription="@string/image"
         android:src="@drawable/ic_launcher_foreground"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/member_tv1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="107dp"
+        android:layout_marginStart="@dimen/member_fragment_tv1_marginStart"
+        android:layout_marginTop="@dimen/member_fragment_tv1_marginTop"
         android:text="@string/hello"
         android:textColor="#e39f9f9f"
-        android:textSize="23sp"
+        android:textSize="@dimen/member_fragment_tv1_textSize"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintStart_toEndOf="@+id/iv_person"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvName"
+        android:id="@+id/member_tv2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="17dp"
-        android:layout_marginTop="6dp"
+        android:layout_marginStart="@dimen/member_fragment_tv2_marginStart"
+        android:layout_marginTop="@dimen/member_fragment_tv2_marginTop"
         android:text="@string/youstina_atef_fahim"
-        android:textColor="#0095a9"
-        android:textSize="23sp"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/member_fragment_tv2_textSize"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/imageView9"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintStart_toEndOf="@+id/iv_person"
+        app:layout_constraintTop_toBottomOf="@+id/member_tv1" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/member_iv3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="210dp"
-        android:layout_marginTop="221dp"
-        android:layout_marginEnd="122dp"
+        android:layout_marginStart="@dimen/member_fragment_iv3_marginStart"
+        android:layout_marginTop="@dimen/member_fragment_iv3_marginTop"
+        android:layout_marginEnd="@dimen/member_fragment_iv3_marginEnd"
         android:src="@drawable/subtraction_1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/image" />
 
     <View
-        android:id="@+id/view"
+        android:id="@+id/member_view"
         android:layout_width="match_parent"
-        android:layout_height="669dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="@dimen/member_fragment_view_height"
+        android:layout_marginTop="@dimen/member_fragment_view_marginTop"
         android:background="@drawable/view_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="57dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="64dp"
+        android:id="@+id/member_iv4"
+        android:layout_width="@dimen/member_fragment_iv4_width"
+        android:layout_height="@dimen/member_fragment_iv4_height"
+        android:layout_marginStart="@dimen/member_fragment_iv4_marginStart"
+        android:layout_marginTop="@dimen/member_fragment_iv4_marginTop"
         android:src="@drawable/ellipse_3"
-        app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toTopOf="@+id/view" />
+        app:layout_constraintStart_toEndOf="@+id/member_tv3"
+        app:layout_constraintTop_toTopOf="@+id/member_view"
+        android:contentDescription="@string/image" />
 
     <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="51dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="80dp"
+        android:id="@+id/member_iv5"
+        android:layout_width="@dimen/member_fragment_iv5_width"
+        android:layout_height="@dimen/member_fragment_iv5_height"
+        android:layout_marginStart="@dimen/member_fragment_iv5_marginStart"
+        android:layout_marginTop="@dimen/member_fragment_iv5_marginTop"
         android:src="@drawable/ellipse_2"
-        app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toTopOf="@+id/view" />
+        app:layout_constraintStart_toEndOf="@+id/member_tv3"
+        app:layout_constraintTop_toTopOf="@+id/member_view"
+        android:contentDescription="@string/image" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/member_tv3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="42dp"
-        android:layout_marginTop="41dp"
+        android:layout_marginStart="@dimen/member_fragment_tv3_marginStart"
+        android:layout_marginTop="@dimen/member_fragment_tv3_marginTop"
         android:text="@string/section_media"
-        android:textColor="#e8000000"
-        android:textSize="37sp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/member_fragment_tv3_textSize"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view" />
+        app:layout_constraintTop_toTopOf="@+id/member_view" />
 
     <TextView
+        android:id="@+id/member_tv4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="42dp"
-        android:layout_marginTop="94dp"
+        android:layout_marginStart="@dimen/member_fragment_tv4_marginStart"
+        android:layout_marginTop="@dimen/member_fragment_tv4_marginTop"
         android:text="@string/graphic_designer"
         android:textColor="#04c0d9"
-        android:textSize="20sp"
+        android:textSize="@dimen/member_fragment_tv4_textSize"
         android:textStyle="normal"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view" />
+        app:layout_constraintTop_toTopOf="@+id/member_view" />
 
     <ImageView
-        android:id="@+id/imageView14"
+        android:id="@+id/member_iv6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="197dp"
+        android:layout_marginStart="@dimen/member_fragment_iv6_marginStart"
+        android:layout_marginTop="@dimen/member_fragment_iv6_marginTop"
         android:src="@drawable/ic_google"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view" />
+        app:layout_constraintTop_toTopOf="@+id/member_view"
+        android:contentDescription="@string/image" />
 
     <TextView
-        android:id="@+id/tvEmail"
-        android:layout_width="wrap_content"
+        android:id="@+id/tv_email"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="206dp"
+        android:layout_marginStart="@dimen/member_fragment_email_marginStart"
+        android:layout_marginTop="@dimen/member_fragment_email_marginTop"
+        android:layout_marginEnd="@dimen/member_fragment_email_marginEnd"
         android:text="@string/youstinaatef2021_gmail_com"
         android:textColor="#4d4d4d"
-        android:textSize="20sp"
+        android:textSize="@dimen/member_fragment_email_textSize"
         android:textStyle="normal"
-        app:layout_constraintStart_toEndOf="@+id/imageView14"
-        app:layout_constraintTop_toTopOf="@+id/view" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/member_iv6"
+        app:layout_constraintTop_toTopOf="@+id/member_view" />
 
     <ImageView
-        android:id="@+id/imageView15"
+        android:id="@+id/member_iv7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginStart="@dimen/member_fragment_iv7_marginStart"
+        android:layout_marginTop="@dimen/member_fragment_iv7_marginTop"
         android:src="@drawable/ic_facebook"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+        app:layout_constraintTop_toBottomOf="@+id/member_iv6"
+        android:contentDescription="@string/image" />
 
     <TextView
+        android:id="@+id/tv_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="19dp"
-        android:layout_marginTop="324dp"
+        android:layout_marginStart="@dimen/member_fragment_name_marginStart"
+        android:layout_marginTop="@dimen/member_fragment_name_marginTop"
         android:text="@string/tena_atef"
         android:textColor="#4d4d4d"
-        android:textSize="22sp"
-        android:textStyle="normal"
-        app:layout_constraintStart_toEndOf="@+id/imageView15"
-        app:layout_constraintTop_toTopOf="@+id/view" />
+        android:textSize="@dimen/member_fragment_name_textSize"
+        app:layout_constraintStart_toEndOf="@+id/member_iv7"
+        app:layout_constraintTop_toTopOf="@+id/member_view" />
 
     <ImageView
-        android:id="@+id/imageView16"
+        android:id="@+id/member_iv8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="31dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="25dp"
+        android:layout_marginStart="@dimen/member_fragment_iv8_marginStart"
+        android:layout_marginTop="@dimen/member_fragment_iv8_marginTop"
+        android:layout_marginBottom="@dimen/member_fragment_iv8_marginBottom"
         android:src="@drawable/ic_whatsapp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+        app:layout_constraintTop_toBottomOf="@+id/member_iv7"
+        android:contentDescription="@string/image" />
 
     <TextView
-        android:id="@+id/tvPhone"
+        android:id="@+id/tv_number"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="442dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="@dimen/member_fragment_number_marginBottom"
         android:text="@string/_01223840711"
         android:textColor="#4d4d4d"
-        android:textSize="22sp"
-        android:textStyle="normal"
+        android:textSize="@dimen/member_fragment_number_textSize"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView16"
-        app:layout_constraintTop_toTopOf="@+id/view" />
+        app:layout_constraintStart_toEndOf="@+id/member_iv8"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name"
+        app:layout_constraintVertical_bias="0.794" />
 </androidx.constraintlayout.widget.ConstraintLayout>

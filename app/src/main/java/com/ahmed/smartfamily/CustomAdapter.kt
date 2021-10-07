@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 
-class CustomAdapter(var Array:ArrayList<Int>) :RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
+class CustomAdapter(private var Array:ArrayList<Int>) :RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
 
 
 
@@ -18,7 +18,7 @@ class CustomAdapter(var Array:ArrayList<Int>) :RecyclerView.Adapter<CustomAdapte
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
-        holder.imageview.setImageResource(Array[position])
+        holder.imageView.setImageResource(Array[position])
     }
 
     override fun getItemCount(): Int {
@@ -26,6 +26,6 @@ class CustomAdapter(var Array:ArrayList<Int>) :RecyclerView.Adapter<CustomAdapte
     }
 
     class ViewHolder(itemView:View):RecyclerView.ViewHolder(itemView){
-        val imageview=itemView.findViewById<ImageView>(R.id.iv_item)
+        val imageView=itemView.findViewById<ImageView>(R.id.ranking_iv1)
     }
 }

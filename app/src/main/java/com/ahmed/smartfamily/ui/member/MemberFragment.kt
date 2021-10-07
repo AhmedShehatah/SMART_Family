@@ -36,7 +36,7 @@ class MemberFragment : BaseFragment<FragmentMemberBinding>(), MemberListener {
         hideProgressDialog()
         binding.tvName.text = member.name
         binding.tvEmail.text = member.email
-        binding.tvPhone.text = member.phone
+        binding.tvNumber.text = member.phone
     }
 
     override fun onFailure(msg: String) {
