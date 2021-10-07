@@ -180,6 +180,8 @@
     <dimen name="president_fragment_iv1_founder_marginStart">32dp</dimen>
     <dimen name="president_fragment_iv1_founder_marginTop">24dp</dimen>
     <dimen name="president_fragment_tv_previous_marginTop">8dp</dimen>
+    <dimen name="president_fragment_iv_current_marginStart">20dp</dimen>
+    <dimen name="president_fragment_iv_previous_marginStart">20dp</dimen>
     <dimen name="president_fragment_tv_previous_marginBottom">24dp</dimen>
     <dimen name="president_fragment_tv_previous_textSize">23sp</dimen>
     <dimen name="president_fragment_iv_current_marginTop">24dp</dimen>
@@ -187,6 +189,7 @@
     <dimen name="president_fragment_tv1_founder_marginTop">8dp</dimen>
     <dimen name="president_fragment_tv1_founder_textSize">23sp</dimen>
     <dimen name="member_fragment_email_marginEnd">5dp</dimen>
+
 
 
 </resources>

@@ -84,12 +84,14 @@
         android:id="@+id/president_iv_previous"
         android:layout_width="@dimen/president_fragment_iv_width"
         android:layout_height="@dimen/president_fragment_iv_height"
+        android:layout_marginStart="@dimen/president_fragment_iv_previous_marginStart"
         android:layout_marginTop="@dimen/president_fragment_iv_previous_marginTop"
         android:layout_marginEnd="@dimen/president_fragment_iv_previous_marginEnd"
         android:background="@color/cardview_dark_background"
         android:contentDescription="@string/image"
         android:src="@drawable/ic_launcher_foreground"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/president_iv2_founder"
         app:layout_constraintTop_toBottomOf="@+id/president_tv5" />
 
     <TextView
@@ -170,12 +172,14 @@
         android:id="@+id/president_iv_current"
         android:layout_width="@dimen/president_fragment_iv_width"
         android:layout_height="@dimen/president_fragment_iv_height"
+        android:layout_marginStart="@dimen/president_fragment_iv_current_marginStart"
         android:layout_marginTop="@dimen/president_fragment_iv_current_marginTop"
         android:layout_marginEnd="@dimen/president_fragment_iv_current_marginEnd"
         android:background="@color/cardview_dark_background"
         android:contentDescription="@string/image"
         android:src="@drawable/ic_launcher_foreground"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/president_iv1_founder"
         app:layout_constraintTop_toBottomOf="@+id/president_tv2" />
 
     <TextView
