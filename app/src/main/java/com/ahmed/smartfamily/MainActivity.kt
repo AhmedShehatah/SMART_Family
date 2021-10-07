@@ -70,10 +70,16 @@ class MainActivity : AppCompatActivity(),
         when (item.itemId) {
 
             R.id.nav_home -> {
-
+                navController.navigate(R.id.rankingFragment)
+            }
+            R.id.nav_ranking -> {
+                navController.navigate(R.id.rankingFragment)
             }
             R.id.nav_qr -> {
                 navController.navigate(R.id.QRFragment)
+            }
+            R.id.nav_info -> {
+                navController.navigate(R.id.infoFragment)
             }
 
         }

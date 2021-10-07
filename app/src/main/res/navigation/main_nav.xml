@@ -18,14 +18,14 @@
     </fragment>
     <fragment
         android:id="@+id/imagesFragment"
-        android:name="com.ahmed.smartfamily.ui.president.ImagesFragment"
+        android:name="com.ahmed.smartfamily.ui.president.PresidentFragment"
         android:label="fragment_images"
-        tools:layout="@layout/fragment_images" />
+        tools:layout="@layout/fragment_president" />
     <fragment
         android:id="@+id/rankingFragment"
         android:name="com.ahmed.smartfamily.ui.rank.RankingFragment"
         android:label="fragment_ranking"
-        tools:layout="@layout/fragment_ranking" >
+        tools:layout="@layout/fragment_ranking">
         <action
             android:id="@+id/action_rankingFragment_to_imagesFragment"
             app:destination="@id/imagesFragment" />
