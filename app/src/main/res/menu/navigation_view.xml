@@ -1,20 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:id="@+id/nav_home"
-        android:title="Home"
-        android:icon="@drawable/ic_home" />
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
 
-    <item android:id="@+id/nav_ranking"
-        android:title="career ranking"
-        android:icon="@drawable/ic_ranking" />
+    <item
+        android:id="@+id/nav_ranking"
+        android:icon="@drawable/ic_ranking"
+        android:title="career ranking" />
 
-    <item android:id="@+id/nav_qr"
-        android:title="scan QR code"
-        android:icon="@drawable/ic_qr" />
+    <item
+        android:id="@+id/nav_qr"
+        android:icon="@drawable/ic_qr"
+        android:title="scan QR code" />
+    <item
+        android:id="@+id/nav_events"
+        android:icon="@drawable/ic_baseline_emoji_events_24"
+        android:title="event"/>
 
-    <item android:id="@+id/nav_info"
-        android:title="info"
-        android:icon="@drawable/ic_info" />
+    <item
+        android:id="@+id/nav_info"
+        android:icon="@drawable/ic_info"
+        android:title="info" />
 
 </menu>

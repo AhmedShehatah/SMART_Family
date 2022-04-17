@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,13 +11,13 @@
         android:id="@+id/base_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="@dimen/ranking_fragment_tv1_marginTop"
-        android:layout_marginEnd="@dimen/ranking_fragment_tv1_marginEnd"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_30sdp"
         android:text="@string/welcome"
         android:textColor="#093c44"
         android:textSize="@dimen/ranking_fragment_tv1_textSize"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,8 +25,8 @@
         android:id="@+id/ranking_tv2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/ranking_fragment_tv2_marginStart"
-        android:layout_marginEnd="@dimen/ranking_fragment_tv2_marginEnd"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_4sdp"
         android:text="@string/tv2_screen2"
         android:textColor="#75989d"
         android:textSize="@dimen/ranking_fragment_tv2_textSize"
@@ -36,83 +35,67 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/base_tv" />
 
-    <ImageView
-        android:id="@+id/ranking_iv1"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="@dimen/ranking_fragment_iv1_marginStart"
-        android:layout_marginTop="@dimen/ranking_fragment_iv1_marginTop"
-        android:layout_marginEnd="@dimen/ranking_fragment_iv1_marginEnd"
-        android:layout_marginBottom="@dimen/ranking_fragment_iv1_marginBottom"
-        android:src="@drawable/iv_screen2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ranking_tv2"
-        app:layout_constraintVertical_bias="0.0" />
-
     <TextView
         android:id="@+id/ranking_tv_president"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/ranking_fragment_president_marginTop"
-        android:text="@string/tv3_screen2"
-        android:textColor="@color/white"
-        android:textSize="@dimen/ranking_fragment_president_textSize"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/ranking_iv1"
-        app:layout_constraintStart_toStartOf="@+id/ranking_iv1"
-        app:layout_constraintTop_toTopOf="@+id/ranking_iv1" />
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rank_view"
+        android:gravity="center"
+        android:text="@string/president"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ranking_tv2" />
 
     <TextView
         android:id="@+id/tv_vice_presedent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/ranking_fragment_vicePresident_marginTop"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:background="@drawable/rank_view"
+        android:gravity="center"
         android:text="@string/tv4_screen2"
         android:textColor="@color/white"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/ranking_iv1"
-        app:layout_constraintStart_toStartOf="@+id/ranking_iv1"
-        app:layout_constraintTop_toTopOf="@+id/ranking_iv1" />
+        app:layout_constraintStart_toEndOf="@+id/ranking_tv_president"
+        app:layout_constraintTop_toBottomOf="@+id/ranking_tv_president" />
 
     <TextView
         android:id="@+id/ranking_tv_head_section"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/ranking_fragment_headSection_marginTop"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:background="@drawable/rank_view"
+        android:gravity="center"
         android:text="@string/tv5_screen2"
         android:textColor="@color/white"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/ranking_iv1"
-        app:layout_constraintHorizontal_bias="0.483"
-        app:layout_constraintStart_toStartOf="@+id/ranking_iv1"
-        app:layout_constraintTop_toTopOf="@+id/ranking_iv1" />
+        app:layout_constraintStart_toEndOf="@+id/tv_vice_presedent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_vice_presedent" />
 
     <TextView
         android:id="@+id/ranking_tv_vice_section"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/ranking_fragment_viceSection_marginTop"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:background="@drawable/rank_view"
+        android:gravity="center"
         android:text="@string/tv6_screen2"
         android:textColor="@color/white"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/ranking_iv1"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="@+id/ranking_iv1"
-        app:layout_constraintTop_toTopOf="@+id/ranking_iv1" />
+        app:layout_constraintEnd_toStartOf="@+id/ranking_tv_head_section"
+        app:layout_constraintTop_toBottomOf="@+id/ranking_tv_head_section" />
 
     <TextView
         android:id="@+id/ranking_tv_member"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/ranking_fragment_member_marginTop"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:background="@drawable/rank_view"
+        android:gravity="center"
         android:text="@string/tv7_screen2"
         android:textColor="@color/white"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/ranking_iv1"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="@+id/ranking_iv1"
-        app:layout_constraintTop_toTopOf="@+id/ranking_iv1" />
+        app:layout_constraintEnd_toStartOf="@+id/ranking_tv_vice_section"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ranking_tv_vice_section" />
 </androidx.constraintlayout.widget.ConstraintLayout>

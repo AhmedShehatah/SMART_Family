@@ -7,12 +7,13 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 
-class CustomAdapter(private var Array:ArrayList<Int>) :RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
-
+class CustomAdapter(private var Array: ArrayList<Int>) :
+    RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view=LayoutInflater.from(parent.context).inflate(R.layout.recycler_view_item,parent,false)
+        val view =
+            LayoutInflater.from(parent.context).inflate(R.layout.recycler_view_item, parent, false)
         return ViewHolder(view)
     }
 
@@ -25,7 +26,7 @@ class CustomAdapter(private var Array:ArrayList<Int>) :RecyclerView.Adapter<Cust
         return Array.size
     }
 
-    class ViewHolder(itemView:View):RecyclerView.ViewHolder(itemView){
-        val imageView=itemView.findViewById<ImageView>(R.id.ranking_iv1)
+    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val imageView = itemView.findViewById<ImageView>(R.id.ranking_iv1)
     }
 }

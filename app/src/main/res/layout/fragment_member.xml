@@ -1,219 +1,243 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/screen2_1"
-    tools:context=".ui.member.MemberFragment">
+    android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/member_iv1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/member_fragment_iv1_marginEnd"
-        android:layout_marginBottom="@dimen/member_fragment_iv1_marginBottom"
-        android:src="@drawable/layer_3"
-        app:layout_constraintBottom_toBottomOf="@+id/iv_person"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:contentDescription="@string/image" />
-
-    <ImageView
-        android:id="@+id/member_iv2"
-        android:layout_width="@dimen/member_fragment_iv2_width"
-        android:layout_height="@dimen/member_fragment_iv2_height"
-        android:layout_marginStart="@dimen/member_fragment_iv2_marginStart"
-        android:layout_marginEnd="@dimen/member_fragment_iv2_marginEnd"
-        android:layout_marginBottom="@dimen/member_fragment_iv2_marginBottom"
-        android:src="@drawable/ellipse_2"
-        app:layout_constraintBottom_toTopOf="@+id/iv_person"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/member_iv1"
-        android:contentDescription="@string/image" />
-
-    <ImageView
-        android:id="@+id/iv_person"
-        android:layout_width="@dimen/member_fragment_person_width"
-        android:layout_height="@dimen/member_fragment_person_height"
-        android:layout_marginStart="@dimen/member_fragment_person_marginStart"
-        android:layout_marginTop="@dimen/member_fragment_person_marginTop"
-        android:background="@drawable/ic_launcher_background"
-        android:contentDescription="@string/image"
-        android:src="@drawable/ic_launcher_foreground"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/member_tv1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/member_fragment_tv1_marginStart"
-        android:layout_marginTop="@dimen/member_fragment_tv1_marginTop"
-        android:text="@string/hello"
-        android:textColor="#e39f9f9f"
-        android:textSize="@dimen/member_fragment_tv1_textSize"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/iv_person"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/member_tv2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/member_fragment_tv2_marginStart"
-        android:layout_marginTop="@dimen/member_fragment_tv2_marginTop"
-        android:text="@string/youstina_atef_fahim"
-        android:textColor="@color/blue"
-        android:textSize="@dimen/member_fragment_tv2_textSize"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/iv_person"
-        app:layout_constraintTop_toBottomOf="@+id/member_tv1" />
-
-    <ImageView
-        android:id="@+id/member_iv3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/member_fragment_iv3_marginStart"
-        android:layout_marginTop="@dimen/member_fragment_iv3_marginTop"
-        android:layout_marginEnd="@dimen/member_fragment_iv3_marginEnd"
-        android:src="@drawable/subtraction_1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/image" />
-
-    <View
-        android:id="@+id/member_view"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/member_fragment_view_height"
-        android:layout_marginTop="@dimen/member_fragment_view_marginTop"
-        android:background="@drawable/view_background"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/member_iv4"
-        android:layout_width="@dimen/member_fragment_iv4_width"
-        android:layout_height="@dimen/member_fragment_iv4_height"
-        android:layout_marginStart="@dimen/member_fragment_iv4_marginStart"
-        android:layout_marginTop="@dimen/member_fragment_iv4_marginTop"
-        android:src="@drawable/ellipse_3"
-        app:layout_constraintStart_toEndOf="@+id/member_tv3"
-        app:layout_constraintTop_toTopOf="@+id/member_view"
-        android:contentDescription="@string/image" />
-
-    <ImageView
-        android:id="@+id/member_iv5"
-        android:layout_width="@dimen/member_fragment_iv5_width"
-        android:layout_height="@dimen/member_fragment_iv5_height"
-        android:layout_marginStart="@dimen/member_fragment_iv5_marginStart"
-        android:layout_marginTop="@dimen/member_fragment_iv5_marginTop"
-        android:src="@drawable/ellipse_2"
-        app:layout_constraintStart_toEndOf="@+id/member_tv3"
-        app:layout_constraintTop_toTopOf="@+id/member_view"
-        android:contentDescription="@string/image" />
-
-    <TextView
-        android:id="@+id/member_tv3"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/member_fragment_tv3_marginStart"
-        android:layout_marginTop="@dimen/member_fragment_tv3_marginTop"
-        android:text="@string/section_media"
-        android:textColor="@color/black"
-        android:textSize="@dimen/member_fragment_tv3_textSize"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/member_view" />
+        android:background="@drawable/screen2_1"
+        tools:context=".ui.member.MemberFragment">
 
-    <TextView
-        android:id="@+id/member_tv4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/member_fragment_tv4_marginStart"
-        android:layout_marginTop="@dimen/member_fragment_tv4_marginTop"
-        android:text="@string/graphic_designer"
-        android:textColor="#04c0d9"
-        android:textSize="@dimen/member_fragment_tv4_textSize"
-        android:textStyle="normal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/member_view" />
+        <ImageView
+            android:id="@+id/member_iv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_270sdp"
+            android:layout_marginBottom="@dimen/_80sdp"
+            android:contentDescription="@string/image"
+            android:src="@drawable/layer_3"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_person"
+            app:layout_constraintEnd_toEndOf="parent" />
 
-    <ImageView
-        android:id="@+id/member_iv6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/member_fragment_iv6_marginStart"
-        android:layout_marginTop="@dimen/member_fragment_iv6_marginTop"
-        android:src="@drawable/ic_google"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/member_view"
-        android:contentDescription="@string/image" />
+        <ImageView
+            android:id="@+id/member_iv2"
+            android:layout_width="@dimen/member_fragment_iv2_width"
+            android:layout_height="@dimen/member_fragment_iv2_height"
+            android:layout_marginStart="@dimen/member_fragment_iv2_marginStart"
+            android:layout_marginEnd="@dimen/member_fragment_iv2_marginEnd"
+            android:layout_marginBottom="@dimen/member_fragment_iv2_marginBottom"
+            android:contentDescription="@string/image"
+            android:src="@drawable/ellipse_2"
+            app:layout_constraintBottom_toTopOf="@+id/iv_person"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/member_iv1" />
 
-    <TextView
-        android:id="@+id/tv_email"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/member_fragment_email_marginStart"
-        android:layout_marginTop="@dimen/member_fragment_email_marginTop"
-        android:layout_marginEnd="@dimen/member_fragment_email_marginEnd"
-        android:text="@string/youstinaatef2021_gmail_com"
-        android:textColor="#4d4d4d"
-        android:textSize="@dimen/member_fragment_email_textSize"
-        android:textStyle="normal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/member_iv6"
-        app:layout_constraintTop_toTopOf="@+id/member_view" />
+        <ImageView
+            android:id="@+id/iv_person"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/member_fragment_person_marginTop"
+            android:background="@drawable/ic_launcher_background"
+            android:contentDescription="@string/image"
+            android:src="@drawable/ic_launcher_foreground"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/member_iv7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/member_fragment_iv7_marginStart"
-        android:layout_marginTop="@dimen/member_fragment_iv7_marginTop"
-        android:src="@drawable/ic_facebook"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/member_iv6"
-        android:contentDescription="@string/image" />
+        <TextView
+            android:id="@+id/member_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_79sdp"
+            android:text="@string/hello"
+            android:textColor="#e39f9f9f"
+            android:textSize="@dimen/member_fragment_tv1_textSize"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/iv_person"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tv_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/member_fragment_name_marginStart"
-        android:layout_marginTop="@dimen/member_fragment_name_marginTop"
-        android:text="@string/tena_atef"
-        android:textColor="#4d4d4d"
-        android:textSize="@dimen/member_fragment_name_textSize"
-        app:layout_constraintStart_toEndOf="@+id/member_iv7"
-        app:layout_constraintTop_toTopOf="@+id/member_view" />
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/member_fragment_tv2_marginTop"
+            android:layout_marginEnd="8dp"
+            android:autoSizeMaxTextSize="24sp"
+            android:autoSizeMinTextSize="18sp"
+            android:autoSizeStepGranularity="20sp"
+            android:autoSizeTextType="uniform"
+            android:text="@string/youstina_atef_fahim"
+            android:textColor="@color/blue"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/iv_person"
+            app:layout_constraintTop_toBottomOf="@+id/member_tv1" />
 
-    <ImageView
-        android:id="@+id/member_iv8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/member_fragment_iv8_marginStart"
-        android:layout_marginTop="@dimen/member_fragment_iv8_marginTop"
-        android:layout_marginBottom="@dimen/member_fragment_iv8_marginBottom"
-        android:src="@drawable/ic_whatsapp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/member_iv7"
-        android:contentDescription="@string/image" />
+        <ImageView
+            android:id="@+id/member_iv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:contentDescription="@string/image"
+            android:src="@drawable/subtraction_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.68"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name" />
 
-    <TextView
-        android:id="@+id/tv_number"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginBottom="@dimen/member_fragment_number_marginBottom"
-        android:text="@string/_01223840711"
-        android:textColor="#4d4d4d"
-        android:textSize="@dimen/member_fragment_number_textSize"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/member_iv8"
-        app:layout_constraintTop_toBottomOf="@+id/tv_name"
-        app:layout_constraintVertical_bias="0.794" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <View
+            android:id="@+id/member_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_400sdp"
+            android:layout_marginTop="@dimen/_205sdp"
+            android:background="@drawable/view_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/member_iv4"
+            android:layout_width="@dimen/_43sdp"
+            android:layout_height="@dimen/_43sdp"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:contentDescription="@string/image"
+            android:src="@drawable/ellipse_3"
+            app:layout_constraintEnd_toEndOf="@+id/member_iv5"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tv_section"
+            app:layout_constraintTop_toTopOf="@+id/member_view" />
+
+        <ImageView
+            android:id="@+id/member_iv5"
+            android:layout_width="@dimen/_41sdp"
+            android:layout_height="@dimen/_41sdp"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_68sdp"
+            android:layout_marginEnd="24dp"
+            android:contentDescription="@string/image"
+            android:src="@drawable/ellipse_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_section"
+            app:layout_constraintTop_toTopOf="@+id/member_view" />
+
+        <TextView
+            android:id="@+id/tv_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_34sdp"
+            android:layout_marginTop="@dimen/_31sdp"
+            android:text="@string/section_media"
+            android:textColor="@color/black"
+            android:textSize="@dimen/member_fragment_tv3_textSize"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/member_view" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_34sdp"
+            android:text="@string/graphic_designer"
+            android:textColor="#04c0d9"
+            android:textSize="@dimen/member_fragment_tv4_textSize"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_section" />
+
+        <ImageView
+            android:id="@+id/member_iv6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_26sdp"
+            android:contentDescription="@string/image"
+            android:src="@drawable/ic_google"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/member_fragment_email_marginStart"
+            android:layout_marginEnd="@dimen/member_fragment_email_marginEnd"
+            android:autoSizeMaxTextSize="24sp"
+            android:autoSizeMinTextSize="18sp"
+            android:autoSizeStepGranularity="20sp"
+            android:autoSizeTextType="uniform"
+            android:text="@string/youstinaatef2021_gmail_com"
+            android:textColor="#4d4d4d"
+            android:textSize="@dimen/member_fragment_email_textSize"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/member_iv6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/member_iv6"
+            app:layout_constraintTop_toTopOf="@+id/member_iv6" />
+
+        <ImageView
+            android:id="@+id/member_iv7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:contentDescription="@string/image"
+            android:src="@drawable/ic_facebook"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/member_iv6" />
+
+        <TextView
+            android:id="@+id/tv_face"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/member_fragment_name_marginStart"
+            android:layout_marginEnd="8dp"
+            android:autoSizeMaxTextSize="24sp"
+            android:autoSizeMinTextSize="18sp"
+            android:autoSizeStepGranularity="20sp"
+            android:autoSizeTextType="uniform"
+            android:text="@string/tena_atef"
+            android:textColor="#4d4d4d"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/member_iv7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/member_iv7"
+            app:layout_constraintTop_toTopOf="@+id/member_iv7" />
+
+        <ImageView
+            android:id="@+id/member_iv8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:contentDescription="@string/image"
+            android:src="@drawable/ic_whatsapp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/member_iv7"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:text="@string/_01223840711"
+            android:textColor="#4d4d4d"
+            android:textSize="@dimen/member_fragment_number_textSize"
+            app:layout_constraintBottom_toBottomOf="@+id/member_iv8"
+            app:layout_constraintStart_toEndOf="@+id/member_iv8"
+            app:layout_constraintTop_toTopOf="@+id/member_iv8" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
