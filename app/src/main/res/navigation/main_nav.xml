@@ -53,4 +53,9 @@
             android:name="token"
             app:argType="string" />
     </fragment>
+    <fragment
+        android:id="@+id/eventsFragment"
+        android:name="com.ahmed.smartfamily.EventsFragment"
+        android:label="fragment_events"
+        tools:layout="@layout/fragment_events" />
 </navigation>

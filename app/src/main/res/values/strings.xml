@@ -5,7 +5,7 @@
     <string name="welcome">welcome,</string>
     <string name="tv2_screen2">This is the career ranking of the "Smart family"</string>
     <string name="tv3_screen2">president</string>
-    <string name="tv4_screen2">vice president</string>
+    <string name="tv4_screen2">vice\npresident</string>
     <string name="tv5_screen2">Head of sections</string>
     <string name="tv6_screen2">vice of sections</string>
     <string name="tv7_screen2">Members of sections</string>
@@ -26,7 +26,6 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="current">Current</string>
-    <string name="founder">Founder</string>
     <string name="previous">Previous</string>
     <string name="beshoy_kadous">Beshoy Kadous</string>
     <string name="hello">Hello</string>
@@ -45,4 +44,7 @@
     <string name="info_tv2">هو نشاط تطوعي غير هادف للربح ، هدفه انه يعمل بين الناس اللي عندهم خبرة في مجالات معينة و بين الناس اللي عايزين يتعلموا المجالات دي . اكيد سمعنا كتير كل اللي بتتعلمه في الكلية ملوش دعوة بسوق العمل ، سمارت فاميلي بقى بتشتغل على سد الفجوة بين حديثي التخرج و سوق العمل عن طريق تزويدهم بكورسات و ورش عمل في مجالات كتير لتقويتهم</string>
     <string name="please_wait">Please Wait</string>
     <string name="events_of_smart">Events of SMART</string>
+    <string name="founder">Founder</string>
+    <string name="president">President</string>
+    <string name="mazen_osama">Mazen Osama</string>
 </resources>
